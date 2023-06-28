@@ -29,8 +29,17 @@
         function divBGGray(){
             document.getElementById("ex").style.backgroundColor = ("Gray")
         }
+        function divBGDyanamic(){
+            document.getElementById("ex").style.backgroundColor = prompt("Enter color name here")
+        }
         function bodyBGDynamic(){
-            document.body.style.backgroundColor = getElementById("ex")
+            document.body.style.backgroundColor =  prompt("Enter color name here")
+        }
+        function bodyBGCP1(){
+            document.body.style.backgroundColor = document.getElementById("CP1").value
+        }
+        function divBGCP2(){
+            document.getElementById("ex").style.backgroundColor = document.getElementById("CP2").value
         }
     </script>
     <style>
@@ -66,8 +75,18 @@
     <input type="button" value="Prompt EXternal" onclick="promptExternal()">
     <br>
     <br>
+    <hr>
+    <br>
     <input type="button" value="Body Bg Green" onclick="bodyBGGreen()">
     <input type="button" value="Div Bg Gray" onclick="divBGGray()">
+    <br>
+    <br>
+    <input type="button" value="Body Bg prompt" onclick="bodyBGDynamic()">
+    <input type="button" value="Div Bg prompt" onclick="divBGDyanamic()">
+    <br>
+    <br>
+    <input type="color" id="CP1" onchange="bodyBGCP1()">
+    <input type="color" id="CP2" onchange="divBGCP2()">
 
 </body>
 </html>
