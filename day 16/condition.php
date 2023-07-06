@@ -1,5 +1,5 @@
 <?php
-$age = (int)readline('Enter your age: ');
+$age = 20;
 
 if ($age < "18") {
   echo "you can not drive!";
